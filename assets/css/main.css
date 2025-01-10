@@ -785,7 +785,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--background-color), transparent 75%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -803,45 +803,9 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color));
   margin: 5px 0 0 0;
-  font-size: 20px;
-}
-
-.hero .sign-up-form {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 7px;
-  background: color-mix(in srgb, var(--default-color) 5%, white 90%);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-  display: flex;
-}
-
-.hero .sign-up-form input[type=email] {
-  background-color: transparent;
-  border: 0;
-  padding: 4px 10px;
-  width: 100%;
-}
-
-.hero .sign-up-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.hero .sign-up-form input[type=submit] {
-  border: 0;
-  box-shadow: none;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  padding: 8px 20px 10px 20px;
-  border-radius: 7px;
-  color: var(--contrast-color);
-  transition: 0.3s;
-}
-
-.hero .sign-up-form input[type=submit]:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -850,7 +814,7 @@ section,
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
